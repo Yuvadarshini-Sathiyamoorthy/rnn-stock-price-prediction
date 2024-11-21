@@ -81,7 +81,7 @@ X_test = np.reshape(X_test,(X_test.shape[0], X_test.shape[1],1))
 X_test.shape
 ```
 ### Ploting Results
-
+```
 predicted_stock_price_scaled = model.predict(X_test)
 predicted_stock_price = sc.inverse_transform(predicted_stock_price_scaled)
 plt.figure(figsize=(8,3))
@@ -98,7 +98,6 @@ plt.show()
 from sklearn.metrics import mean_squared_error as mse
 print('Yuvadarshini S\n212221230126')
 print(mse(y_test,predicted_stock_price))
-
 ```
 
 ## Output
